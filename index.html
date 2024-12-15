@@ -1,0 +1,336 @@
+<html lang="es">
+    <head>
+        <title>BetMor</title>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="estilos.css">
+        <script src = "script.js"> </script>
+        <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="homelink">
+                <img src="logog.png" alt="Imagen Logo" class="imagenLG">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                </ul>
+                <a href="gift.html" class="gift-icon">
+                    <i class="fas fa-gift"></i>
+                </a>
+                <div class="menu-icon" onclick="openNav()">&#9776;</div>
+            </nav>
+        </header>
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Acerca de nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="gift.html" class="gift-icon">
+                <i class="fas fa-gift"></i>
+            </a>
+        </div>
+        <section class="video-section">
+            <video autoplay muted loop id="video-background">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <img src="imagen.png" alt="Imagen Encabezado" class="imagenMB">
+        </section>
+        <section class="destacado">
+            <h2>Lo más destacado</h2>
+            <div class="iner">
+                <div class="slider">
+                    <input type="radio" name="slider" id="slideuno" checked>
+                    <input type="radio" name="slider" id="slidedos">
+                    <input type="radio" name="slider" id="slidetres">
+                    <input type="radio" name="slider" id="slidecuatro">
+                    <input type="radio" name="slider" id="slidecinco">
+                    <div class="buttons">
+                        <label for="slideuno"></label>
+                        <label for="slidedos"></label>
+                        <label for="slidetres"></label>
+                        <label for="slidecuatro"></label>
+                        <label for="slidecinco"></label>
+                    </div>
+                    <div class="apartadocontent">
+                        <div class="unoslide">
+                            <img src="images/ven1.png" class="imgdestac">
+                            <div class="img-container">
+                                <p>Anillo <br> Radiant Rose</p>
+                                <button class="btndestac" data-id="1d">Ver</button>
+                            </div> 
+                        </div>
+                        <div class="dosslide">
+                            <img src="images/ven2.png" class="imgdestac">
+                            <div class="img-container">
+                                <p> Pulsera <br> Elysian Gleam</p>
+                                <button class="btndestac" data-id="5d">Ver</button>
+                            </div> 
+                        </div>
+                        <div class="tresslide">
+                            <img src="images/ven3.png" class="imgdestac">
+                            <div class="img-container">
+                                <p> Pulsera <br> Eclisse Dorée <br></p>
+                                <button class="btndestac" data-id="2d">Ver</button>
+                            </div> 
+                        </div>
+                        <div class="cuatroslide">
+                            <img src="images/ven4.png" class="imgdestac">
+                            <div class="img-container">
+                                <p>Anillo <br> Celestial Grace</p>
+                                <button class="btndestac" data-id="3d">Ver</button>
+                            </div> 
+                        </div>
+                        <div class="cincoslide">
+                            <img src="images/ven5.png" class="imgdestac">
+                            <div class="img-container">
+                                <p> Collar<br>Aurelia Royale</p>
+                                <button class="btndestac" data-id="4d">Ver</button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categorias">
+            <h2> Categorías</h2>
+            <div class="catego">
+                <div class="circle">
+                    <a href="anillo.html">
+                        <img src="images/anillo.png" alt="Imagen 1">
+                    </a>
+                    <p>Anillos</p>
+                </div>
+                <div class="circle">
+                    <a href="aretes.html">
+                        <img src="images/aretes.png" alt="Imagen 2">
+                    </a>
+                    <p>Aretes</p>
+                </div>
+                <div class="circle">
+                    <a href="pulsera.html">
+                        <img src="images/pulsera.png" alt="Imagen 3">
+                    </a>
+                    <p>Pulseras</p>
+                </div>
+                <div class="circle">
+                    <a href="reloj.html">
+                        <img src="images/reloj.png" alt="Imagen 4">
+                    </a>
+                    <p>Relojes</p>
+                </div>
+                <div class="circle">
+                    <a href="collar.html">
+                        <img src="images/collar.png" alt="Imagen 5">
+                    </a>
+                    <p>Collares</p>
+                </div>
+            </div>
+        </section>
+        <section class="colecciones">
+            <h2> Colecciones </h2>
+            <div class="row">
+                <div class="videocole">
+                    <video src="images/nature.mp4" loop autoplay muted>
+                </div>
+                <div class ="content">
+                    <h3>Wildlife Whispers</h3>
+                    <p> Explora la línea "Wildlife Whispers" y lleva contigo la magia de la naturaleza. 
+                        Sumérgete en la belleza de los patrones inspirados en hojas, las vibrantes mariposas y las encantadoras mariquitas, 
+                        cada pieza diseñada para los corazones que aman la naturaleza. Celebra los delicados detalles del mundo natural con nuestras joyas y deja que su gracia te acompañe en cada jornada.
+                    </p>
+                    <a href="coleccion1.html"> <button>Ver colección</button> </a>
+                </div>
+            </div>
+            <div class="productos">
+                <div class="producto" data-id="1c">
+                    <img src="images/collar/nature1.PNG">
+                    <h5>Collar de Mujer Dirillo</h5>
+                    <p>$450.00</p>
+                </div>
+                <div class="producto" data-id="1a">
+                    <img src="images/anillos/nature1.PNG">
+                    <h5>Anillo Hoja Dorada</h5>
+                    <p>$873.00</p>
+                </div>
+                <div class="producto" data-id="1ar">
+                    <img src="images/aretes/nature1.PNG">
+                    <h5>Aretes de mujer Lipari</h5>
+                    <p>$442.00</p>
+                </div>
+                <div class="producto" data-id="1p">
+                    <img src="images/pulseras/nature1.PNG" alt="Producto 2">
+                    <h5>Brazalete de mujer Fiumicino</h5>
+                    <p>$1,691.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class ="content">
+                    <h3>Enlace Celestial</h3>
+                    <p> Adéntrese en la Colección "Enlace Celestial", una expresión sublime las conexiones que dan forma a nuestro mundo. 
+                        Estos exquisitos diseños capturan la esencia de la resistencia y 
+                        la adaptabilidad al fusionar la elegancia de las formas orgánicas con la majestuosidad de los materiales. Deléitese con la fusión armoniosa entre líneas suaves y contornos definidos, donde cada pieza cuenta una historia de unión y crecimiento. 
+                        Descubra un universo donde los enlaces entre nosotros se convierten en constelaciones de belleza y gracia.
+                    </p>
+                    <a href="coleccion2.html"> <button>Ver colección</button> </a>
+                </div>
+                <div class="videocole">
+                    <video src="images/enlaces.mp4" loop autoplay muted>
+                </div>
+            </div>
+            <div class="productos">
+                <div class="producto" data-id="2c">
+                    <img src="images/collar/enlace1.PNG">
+                    <h5>Collar de Mujer Prietenie</h5>
+                    <p>$519.00</p>
+                </div>
+                <div class="producto" data-id="2a">
+                    <img src="images/anillos/enlace1.PNG">
+                    <h5>Anillo Miorbhuil</h5>
+                    <p>$1,049.00</p>
+                </div>
+                <div class="producto" data-id="2ar">
+                    <img src="images/aretes/enlace1.PNG" alt="Producto 1">
+                    <h5>Aretes de mujer Netross</h5>
+                    <p>$469.00</p>
+                </div>
+                <div class="producto" data-id="2p">
+                    <img src="images/pulseras/enlace1.PNG" alt="Producto 2">
+                    <h5>Pulsera de Mujer Intsomi</h5>
+                    <p>$558.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="videocole">
+                    <video src="images/promesa.mp4" loop autoplay muted>
+                </div>
+                <div class ="content">
+                    <h3>Eterna Promesa</h3>
+                    <p> Embárcate en el viaje del compromiso eterno con la Colección Eterna Promesa, 
+                        donde el amor, la elegancia y tu historia única se entrelazan para crear momentos inolvidables. 
+                        Permítenos ser testigos y compañeros en tu día especial, donde tus sueños se adornan con la belleza y el significado que merecen. 
+                        Desde el brillo de un anillo de compromiso hasta la delicadeza de un conjunto de joyas nupciales, 
+                        cada pieza de la Colección Eterna Promesa está diseñada para ser un símbolo de amor perdurable y compromiso eterno.
+                    </p>
+                    <a href="coleccion3.html"> <button>Ver colección</button> </a>
+                </div>
+            </div>
+            <div class="productos">
+                <div class="producto" data-id="3c">
+                    <img src="images/collar/eterna1.PNG" alt="Producto 1">
+                    <h5>Collar de Mujer Umbrete</h5>
+                    <p>$556.00</p>
+                </div>
+                <div class="producto" data-id="3a">
+                    <img src="images/anillos/eterna1.PNG" alt="Producto 2">
+                    <h5>Anillo Antimilos</h5>
+                    <p>$1,199.00</p>
+                </div>
+                <div class="producto" data-id="3ar">
+                    <img src="images/aretes/eterna1.PNG" alt="Producto 1">
+                    <h5>Aretes de mujer Duygus</h5>
+                    <p>$1,039.00</p>
+                </div>
+                <div class="producto" data-id="3p">
+                    <img src="images/pulseras/eterna1.PNG" alt="Producto 2">
+                    <h5>Pulsera de Mujer Ronquillo</h5>
+                    <p>$269.00</p>
+                </div>
+            </div>
+        </section>
+        <script src="js/swiper-bundle.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com /ajax/libs/gsap/3.12.2/gsap.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com /ajax/libs/gsap/3.12.2/ScrollTrigger.min .js"></script>
+        <script src="https://cdn.jsdelivr.net/gh /studio-freight/lenis@1.0.27/bundled/lenis .min.js"></script>
+        <script>
+            const lenis= new Lenis()
+            lenis.on('scroll', ScrollTrigger.update)
+            gsap.ticker.add((time) => {
+            lenis.raf(time * 1000)
+            })
+            gsap.ticker.lagSmoothing (0)
+        </script>
+    </body>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section explore">
+                <h2>Explora</h2>
+                <ul>
+                    <li><a href="anillo.html">Anillos</a></li>
+                    <li><a href="aretes.html">Aretes</a></li>
+                    <li><a href="pulsera.html">Pulseras</a></li>
+                    <li><a href="reloj.html">Relojes</a></li>
+                    <li><a href="collar.html">Collares</a></li>
+                </ul>
+            </div>
+            <div class="footer-section collections">
+                <h2>Colecciones</h2>
+                <ul>
+                    <li><a href="coleccion1.html">Wildlife Whispers</a></li>
+                    <li><a href="coleccion2.html">Enlace Celestial</a></li>
+                    <li><a href="coleccion3.html">Eterna Promesa</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <h2>Síguenos</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/betmor_official?igsh=MWN3MnFrZWczcHlzNA=="><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61561210915569"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contacto</h2>
+                <ul>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="politicas.html">Nuestras Políticas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerpeque">
+            <div class="footer-section explore">
+                <button class="footerexpand">Explora</button>
+                <ul>
+                    <li><a href="anillo.html">Anillos</a></li>
+                    <li><a href="aretes.html">Aretes</a></li>
+                    <li><a href="pulsera.html">Pulseras</a></li>
+                    <li><a href="reloj.html">Relojes</a></li>
+                    <li><a href="collar.html">Collares</a></li>
+                </ul>
+            </div>
+            <div class="footer-section collections">
+                <button class="footerexpand">Colecciones</button>
+                <ul>
+                    <li><a href="coleccion1.html">Wildlife Whispers</a></li>
+                    <li><a href="coleccion2.html">Enlace Celestial</a></li>
+                    <li><a href="coleccion3.html">Eterna Promesa</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <button class="footerexpand">Síguenos</button>
+                <ul>
+                    <li><a href="https://www.instagram.com/betmor_official?igsh=MWN3MnFrZWczcHlzNA=="><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61561210915569"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <button class="footerexpand">Contacto</button>
+                <ul>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="politicas.html">Nuestras Políticas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="index.html">
+                <img src="logog.png" alt="Imagen Logo" class="imagenLG">
+            </a>
+        </div>
+    </footer>
+</html>

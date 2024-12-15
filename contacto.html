@@ -1,0 +1,189 @@
+<html lang="es">
+    <head>
+        <title>BetMor</title>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="estilosproductos.css">
+        <script src = "script.js"> </script>
+        <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="homelink">
+                <img src="logog.png" alt="Imagen Logo" class="imagenLG">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                </ul>
+                <a href="gift.html" class="gift-icon">
+                    <i class="fas fa-gift"></i>
+                </a>
+                <div class="menu-icon" onclick="openNav()">&#9776;</div>
+            </nav>
+        </header>     
+        <div class="subnav">
+            <ul>
+                <li><a href="anillo.html">Anillos</a></li>
+                <li><a href="aretes.html">Aretes</a></li>
+                <li><a href="pulsera.html">Pulseras</a></li>
+                <li><a href="reloj.html">Relojes</a></li>
+                <li><a href="collar.html">Collares</a></li>
+            </ul>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Acerca de nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="gift.html" class="gift-icon">
+                <i class="fas fa-gift"></i>
+            </a>
+        </div>
+        <section class="servicio">
+            <div class="row">
+                <img src="images/joyacontacto.jpg" class="imgcolec">
+                <div class="content">
+                    <h3>BetMor a su servicio</h3>
+                    <p>En BetMor, entendemos que cada cliente es único y merece una atención personalizada. Ninguna pregunta es demasiado insignificante y ninguna petición es demasiado grande para nuestros asesores de atención al cliente. Estamos siempre a su disposición para lo que necesite, desde elegir una pieza de joyería perfecta para una ocasión especial, hasta programar una cita para una consulta privada en nuestra tienda.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contactar">
+            <div class="row">
+                <div class="content">
+                    <h3>Contacte con nosotros</h3>
+                    <p><i class="fa-solid fa-phone"></i>+39 06 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> betmor.jewelry@gmail.com</p>
+                </div>
+                <div class="content">
+                    <h3>Horario de atención</h3>
+                    <p>Lunes-Viernes: 9:00-18:00</p>
+                    <p>Sábado-Domingo: 9:00-12:00</p>
+                </div>
+            </div>
+        </section>
+        <section class="ayuda">
+            <h3>¿En qué podemos ayudarle</h3>
+            <div class="row">
+                <div class="content">
+                    <img src="images/servicio1.PNG">
+                    <p>Contactar con un experto en diamantes</p>
+                </div>
+                <div class="content">
+                    <img src="images/servicio2.PNG">
+                    <p>Solicitar una reparación</p>
+                </div>
+                <div class="content">
+                    <img src="images/servicio3.PNG">
+                    <p>Encontrar su talla</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mante">
+                    <img src="images/mantenimiento1.PNG">
+                    <h3>Servicios de mantenimiento</h3>
+                    <p>Ofrecemos servicio de limpieza, reparación y ajuste de medidas para todas sus joyas de BetMor</p>
+                </div>
+                <div class="mante">
+                    <img src="images/mantenimiento2.PNG">
+                    <h3>Cuidado de productos</h3>
+                    <p>Conozca los consejos para el cuidado de los materiales de sus productos BetMor, desde metales hasta la piel.</p>
+                </div>
+            </div>
+        </section>
+        <script src="js/swiper-bundle.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com /ajax/libs/gsap/3.12.2/gsap.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com /ajax/libs/gsap/3.12.2/ScrollTrigger.min .js"></script>
+        <script src="https://cdn.jsdelivr.net/gh /studio-freight/lenis@1.0.27/bundled/lenis .min.js"></script>
+        <script>
+            const lenis= new Lenis()
+            lenis.on('scroll', ScrollTrigger.update)
+            gsap.ticker.add((time) => {
+            lenis.raf(time * 1000)
+            })
+            gsap.ticker.lagSmoothing (0)
+        </script>
+    </body>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section explore">
+                <h3>Explora</h3>
+                <ul>
+                    <li><a href="anillo.html">Anillos</a></li>
+                    <li><a href="aretes.html">Aretes</a></li>
+                    <li><a href="pulsera.html">Pulseras</a></li>
+                    <li><a href="reloj.html">Relojes</a></li>
+                    <li><a href="collar.html">Collares</a></li>
+                </ul>
+            </div>
+            <div class="footer-section collections">
+                <h3>Colecciones</h3>
+                <ul>
+                    <li><a href="coleccion1.html">Wildlife Whispers</a></li>
+                    <li><a href="coleccion2.html">Enlace Celestial</a></li>
+                    <li><a href="coleccion3.html">Eterna Promesa</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/betmor_official?igsh=MWN3MnFrZWczcHlzNA=="><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61561210915569"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="politicas.html">Nuestras Políticas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerpeque">
+            <div class="footer-section explore">
+                <button class="footerexpand">Explora</button>
+                <ul>
+                    <li><a href="anillo.html">Anillos</a></li>
+                    <li><a href="aretes.html">Aretes</a></li>
+                    <li><a href="pulsera.html">Pulseras</a></li>
+                    <li><a href="reloj.html">Relojes</a></li>
+                    <li><a href="collar.html">Collares</a></li>
+                </ul>
+            </div>
+            <div class="footer-section collections">
+                <button class="footerexpand">Colecciones</button>
+                <ul>
+                    <li><a href="coleccion1.html">Wildlife Whispers</a></li>
+                    <li><a href="coleccion2.html">Enlace Celestial</a></li>
+                    <li><a href="coleccion3.html">Eterna Promesa</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <button class="footerexpand">Síguenos</button>
+                <ul>
+                    <li><a href="https://www.instagram.com/betmor_official?igsh=MWN3MnFrZWczcHlzNA=="><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61561210915569"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <button class="footerexpand">Contacto</button>
+                <ul>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="politicas.html">Nuestras Políticas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="index.html">
+                <img src="logog.png" alt="Imagen Logo" class="imagenLG">
+            </a>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,180 @@
+<html lang="es">
+    <head>
+        <title>BetMor</title>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="estilosproductos.css">
+        <script src = "script.js"> </script>
+        <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="homelink">
+                <img src="logog.png" alt="Imagen Logo" class="imagenLG">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                </ul>
+                <a href="gift.html" class="gift-icon">
+                    <i class="fas fa-gift"></i>
+                </a>
+                <div class="menu-icon" onclick="openNav()">&#9776;</div>
+            </nav>
+        </header>     
+        <div class="subnav">
+            <ul>
+                <li><a href="anillo.html">Anillos</a></li>
+                <li><a href="aretes.html">Aretes</a></li>
+                <li><a href="pulsera.html">Pulseras</a></li>
+                <li><a href="reloj.html">Relojes</a></li>
+                <li><a href="collar.html">Collares</a></li>
+            </ul>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Acerca de nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="gift.html" class="gift-icon">
+                <i class="fas fa-gift"></i>
+            </a>
+        </div>
+        <div class="product-detail-container">
+            <div class="product-images">
+                <img id="main-product-image" src="" alt="Imagen del Producto Principal" onclick="openFullscreenImage(this.src)">
+                <div class="thumbnail-images">
+                    <img class="thumbnail" src="" alt="Thumbnail 1">
+                    <img class="thumbnail" src="" alt="Thumbnail 2">
+                    <img class="thumbnail" src="" alt="Thumbnail 3">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 id="product-name">Nombre del Producto</h1>
+                <p id="product-price">Precio del Producto</p>
+                <p id="product-description">Descripción del Producto</p>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const product = JSON.parse(localStorage.getItem("selectedProduct"));
+                if (product) {
+                    document.getElementById("main-product-image").src = product.mainImage;
+                    document.getElementById("main-product-image").onclick = function() {
+                        openFullscreenImage(product.mainImage);
+                    };
+                    document.querySelectorAll(".thumbnail").forEach((thumbnail, index) => {
+                        thumbnail.src = product.thumbnails[index];
+                        thumbnail.addEventListener("click", function() {
+                            openFullscreenImage(product.thumbnails[index]);
+                        });
+                    });
+                    document.getElementById("product-name").textContent = product.name;
+                    document.getElementById("product-price").textContent = product.price;
+                    document.getElementById("product-description").textContent = product.description;
+                }
+            });
+
+            function openFullscreenImage(imageSrc) {
+                const fullscreenContainer = document.querySelector(".fullscreen-image-container");
+                const fullscreenImage = document.querySelector(".fullscreen-image");
+
+                fullscreenImage.src = imageSrc;
+                fullscreenContainer.style.display = "block";
+
+                const closeButton = document.querySelector(".close-button");
+                closeButton.addEventListener("click", closeFullscreenImage);
+            }
+
+            function closeFullscreenImage() {
+                const fullscreenContainer = document.querySelector(".fullscreen-image-container");
+                fullscreenContainer.style.display = "none";
+            }
+        </script>
+        <div class="fullscreen-image-container">
+            <span class="close-button">&times;</span>
+            <img class="fullscreen-image" src="" alt="Fullscreen Image">
+        </div>
+    </body>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section explore">
+                <h3>Explora</h3>
+                <ul>
+                    <li><a href="anillo.html">Anillos</a></li>
+                    <li><a href="aretes.html">Aretes</a></li>
+                    <li><a href="pulsera.html">Pulseras</a></li>
+                    <li><a href="reloj.html">Relojes</a></li>
+                    <li><a href="collar.html">Collares</a></li>
+                </ul>
+            </div>
+            <div class="footer-section collections">
+                <h3>Colecciones</h3>
+                <ul>
+                    <li><a href="coleccion1.html">Wildlife Whispers</a></li>
+                    <li><a href="coleccion2.html">Enlace Celestial</a></li>
+                    <li><a href="coleccion3.html">Eterna Promesa</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/betmor_official?igsh=MWN3MnFrZWczcHlzNA=="><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61561210915569"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="politicas.html">Nuestras Políticas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerpeque">
+            <div class="footer-section explore">
+                <button class="footerexpand">Explora</button>
+                <ul>
+                    <li><a href="anillo.html">Anillos</a></li>
+                    <li><a href="aretes.html">Aretes</a></li>
+                    <li><a href="pulsera.html">Pulseras</a></li>
+                    <li><a href="reloj.html">Relojes</a></li>
+                    <li><a href="collar.html">Collares</a></li>
+                </ul>
+            </div>
+            <div class="footer-section collections">
+                <button class="footerexpand">Colecciones</button>
+                <ul>
+                    <li><a href="coleccion1.html">Wildlife Whispers</a></li>
+                    <li><a href="coleccion2.html">Enlace Celestial</a></li>
+                    <li><a href="coleccion3.html">Eterna Promesa</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <button class="footerexpand">Síguenos</button>
+                <ul>
+                    <li><a href="https://www.instagram.com/betmor_official?igsh=MWN3MnFrZWczcHlzNA=="><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61561210915569"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <button class="footerexpand">Contacto</button>
+                <ul>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="politicas.html">Nuestras Políticas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="index.html">
+                <img src="logog.png" alt="Imagen Logo" class="imagenLG">
+            </a>
+        </div>
+    </footer>
+    </html>

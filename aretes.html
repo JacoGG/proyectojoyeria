@@ -1,0 +1,329 @@
+<html lang="es">
+    <head>
+        <title>BetMor</title>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="estilosbm.css">
+        <script src = "script.js"> </script>
+        <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+      <header>
+        <a href="index.html" class="homelink">
+            <img src="logog.png" alt="Imagen Logo" class="imagenLG">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+            </ul>
+            <a href="gift.html" class="gift-icon">
+                <i class="fas fa-gift"></i>
+            </a>
+            <div class="menu-icon" onclick="openNav()">&#9776;</div>
+        </nav>
+    </header>     
+    <div class="subnav">
+        <ul>
+            <li><a href="anillo.html">Anillos</a></li>
+            <li><a href="aretes.html">Aretes</a></li>
+            <li><a href="pulsera.html">Pulseras</a></li>
+            <li><a href="reloj.html">Relojes</a></li>
+            <li><a href="collar.html">Collares</a></li>
+        </ul>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Acerca de nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="gift.html" class="gift-icon">
+            <i class="fas fa-gift"></i>
+        </a>
+    </div>
+        <div class="catalog-container">
+          <div class="filters">
+            <h2>Filtrar por:</h2>
+            <h4> Material</h4>
+            <label><input type="checkbox" class="material-filter" value="oro"> Oro</label><br>
+            <label><input type="checkbox" class="material-filter" value="diamante"> Diamante</label><br>
+            <label><input type="checkbox" class="material-filter" value="plata"> Plata</label><br>
+            <label><input type="checkbox" class="material-filter" value="rosa"> Oro Rosa</label><br>
+            
+            <h4> Colección</h4>
+            <label><input type="checkbox" class="collection-filter" value="coleccion1"> Wildlife Whispers</label><br>
+            <label><input type="checkbox" class="collection-filter" value="coleccion2"> Enlace Celestial</label><br>
+            <label><input type="checkbox" class="collection-filter" value="coleccion3"> Eterna Promesa</label><br>
+          </div>
+          <div class="things">
+            <h2>Catálogo de Aretes</h2>
+            <!-- Coleccion 1 -->
+            <div class="productos productos-oro coleccion1">
+              <div class="producto" data-id="1ar">
+                <img src="images/aretes/nature1.PNG">
+                <h5>Aretes de mujer Lipari</h5>
+                <p>$442.00</p>
+              </div>
+              <div class="producto" data-id="1.2ar">
+                <img src="images/aretes/nature2.PNG">
+                <h5>Aretes de mujer Altofonte</h5>
+                <p>$754.00</p>
+              </div>
+              <div class="producto" data-id="1.3ar">
+                <img src="images/aretes/nature3.PNG">
+                <h5>Aretes de mujer Conicatti</h5>
+                <p>$370.00</p>
+              </div>
+              <div class="producto" data-id="1.4ar">
+                <img src="images/aretes/nature4.PNG">
+                <h5>Aretes de mujer Bisceglie</h5>
+                <p>$912.00</p>
+              </div>
+            </div>
+            <div class="productos productos-rosa coleccion1">
+              <div class="producto" data-id="1.5ar">
+                <img src="images/aretes/nature5.PNG">
+                <h5>Aretes de mujer Galatea</h5>
+                <p>$883.00</p>
+              </div>
+              <div class="producto" data-id="1.6ar">
+                <img src="images/aretes/nature6.PNG">
+                <h5>Aretes de mujer Halti</h5>
+                <p>$1,392.00</p>
+              </div>
+              <div class="producto" data-id="1.7ar">
+                <img src="images/aretes/nature7.PNG">
+                <h5>Aretes de mujer Rosabella</h5>
+                <p>$805.00</p>
+              </div>
+              <div class="producto" data-id="1.8ar">
+                <img src="images/aretes/nature8.PNG">
+                <h5>Aretes de mujer Floralis</h5>
+                <p>$415.00</p>
+              </div>
+            </div>
+            <div class="productos productos-plata coleccion1">
+              <div class="producto" data-id="1.9ar">
+                <img src="images/aretes/nature9.PNG">
+                <h5>Aretes de mujer Palagonia</h5>
+                <p>$512.00</p>
+              </div>
+              <div class="producto" data-id="1.10ar">
+                <img src="images/aretes/nature10.PNG">
+                <h5>Aretes de mujer Saponara</h5>
+                <p>$997.00</p>
+              </div>
+              <div class="producto" data-id="1.11ar">
+                <img src="images/aretes/nature11.PNG">
+                <h5>Aretes de mujer Acquedolci</h5>
+                <p>$1,096.00</p>
+              </div>
+              <div class="producto" data-id="1.12ar">
+                <img src="images/aretes/nature12.PNG">
+                <h5>Aretes de mujer Imprecise</h5>
+                <p>$580.00</p>
+              </div>
+            </div>
+            <!-- Coleccion 2 -->
+            <div class="productos productos-oro coleccion2">
+              <div class="producto" data-id="2ar">
+                <img src="images/aretes/enlace1.PNG">
+                <h5>Aretes de mujer Netross</h5>
+                <p>$469.00</p>
+              </div>
+              <div class="producto" data-id="2.2ar">
+                <img src="images/aretes/enlace2.PNG">
+                <h5>Aretes de mujer Dianas</h5>
+                <p>$288.00</p>
+              </div>
+              <div class="producto" data-id="2.3ar">
+                <img src="images/aretes/enlace3.PNG">
+                <h5>Aretes de mujer Couple</h5>
+                <p>$713.00</p>
+              </div>
+              <div class="producto" data-id="2.4ar">
+                <img src="images/aretes/enlace4.PNG">
+                <h5>Aretes de mujer Lilijaj</h5>
+                <p>$494.00</p>
+              </div>
+              <div class="producto" data-id="2.5ar">
+                <img src="images/aretes/enlace5.PNG">
+                <h5>Aretes de mujer Feja</h5>
+                <p>$822.00</p>
+              </div>
+              <div class="producto" data-id="2.6ar">
+                <img src="images/aretes/enlace6.PNG">
+                <h5>Aretes de mujer Idaeus</h5>
+                <p>$632.00</p>
+              </div>
+              <div class="producto" data-id="2.7ar">
+                <img src="images/aretes/enlace7.PNG">
+                <h5>Aretes de mujer Parcha</h5>
+                <p>$563.00</p>
+              </div>
+              <div class="producto" data-id="2.8ar">
+                <img src="images/aretes/enlace8.PNG">
+                <h5>Aretes de mujer Tamu</h5>
+                <p>$661.00</p>
+              </div>
+            </div>
+            <div class="productos productos-diamante coleccion3">
+              <div class="producto" data-id="3ar">
+                <img src="images/aretes/eterna1.PNG">
+                <h5>Aretes de mujer Duygus</h5>
+                <p>$1,039.00</p>
+              </div>
+              <div class="producto" data-id="3.6ar">
+                <img src="images/aretes/eterna6.PNG">
+                <h5>Aretes de mujer Pedrera</h5>
+                <p>$1,052.00</p>
+              </div>
+              <div class="producto" data-id="3.7ar">
+                <img src="images/aretes/eterna7.PNG">
+                <h5>Aretes de mujer Region</h5>
+                <p>$945.00</p>
+              </div>
+              <div class="producto" data-id="3.8ar">
+                <img src="images/aretes/eterna8.PNG">
+                <h5>Aretes de mujer Purchaser</h5>
+                <p>$455.00</p>
+              </div>
+              <div class="producto" data-id="3.9ar">
+                <img src="images/aretes/eterna9.PNG">
+                <h5>Aretes de mujer Marathos</h5>
+                <p>$575.00</p>
+              </div>
+              <div class="producto" data-id="3.10ar">
+                <img src="images/aretes/eterna10.PNG">
+                <h5>Aretes de mujer Security</h5>
+                <p>$784.00</p>
+              </div>
+              <div class="producto" data-id="3.11ar">
+                <img src="images/aretes/eterna11.PNG">
+                <h5>Aretes de mujer Larochelle</h5>
+                <p>$479.00</p>
+              </div>
+              <div class="producto" data-id="3.12ar">
+                <img src="images/aretes/eterna12.PNG">
+                <h5>Aretes de mujer Regulator</h5>
+                <p>$642.00</p>
+              </div>
+            </div>
+            <div class="productos productos-oro coleccion3">
+              <div class="producto" data-id="3.2ar">
+                <img src="images/aretes/eterna2.PNG">
+                <h5>Aretes de mujer Chaumont</h5>
+                <p>$970.00</p>
+              </div>
+              <div class="producto" data-id="3.3ar">
+                <img src="images/aretes/eterna3.PNG">
+                <h5>Aretes de mujer Eiffel</h5>
+                <p>$851.00</p>
+              </div>
+              <div class="producto" data-id="3.4ar">
+                <img src="images/aretes/eterna4.PNG">
+                <h5>Aretes de mujer Trouville</h5>
+                <p>$782.00</p>
+              </div>
+              <div class="producto" data-id="3.5ar">
+                <img src="images/aretes/eterna5.PNG">
+                <h5>Aretes de mujer Vannes</h5>
+                <p>$539.00</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        <script src="js/swiper-bundle.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com /ajax/libs/gsap/3.12.2/gsap.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com /ajax/libs/gsap/3.12.2/ScrollTrigger.min .js"></script>
+        <script src="https://cdn.jsdelivr.net/gh /studio-freight/lenis@1.0.27/bundled/lenis .min.js"></script>
+        <script>
+            const lenis= new Lenis()
+            lenis.on('scroll', ScrollTrigger.update)
+            gsap.ticker.add((time) => {
+            lenis.raf(time * 1000)
+            })
+            gsap.ticker.lagSmoothing (0)
+        </script>
+    </body>
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section explore">
+              <h3>Explora</h3>
+              <ul>
+                  <li><a href="anillo.html">Anillos</a></li>
+                  <li><a href="aretes.html">Aretes</a></li>
+                  <li><a href="pulsera.html">Pulseras</a></li>
+                  <li><a href="reloj.html">Relojes</a></li>
+                  <li><a href="collar.html">Collares</a></li>
+              </ul>
+          </div>
+          <div class="footer-section collections">
+              <h3>Colecciones</h3>
+              <ul>
+                  <li><a href="coleccion1.html">Wildlife Whispers</a></li>
+                  <li><a href="coleccion2.html">Enlace Celestial</a></li>
+                  <li><a href="coleccion3.html">Eterna Promesa</a></li>
+              </ul>
+          </div>
+          <div class="footer-section social-media">
+              <h3>Síguenos</h3>
+              <ul>
+                  <li><a href="https://www.instagram.com/betmor_official?igsh=MWN3MnFrZWczcHlzNA=="><i class="fab fa-instagram"></i> Instagram</a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=61561210915569"><i class="fab fa-facebook"></i> Facebook</a></li>
+              </ul>
+          </div>
+          <div class="footer-section contact">
+              <h3>Contacto</h3>
+              <ul>
+                  <li><a href="contacto.html">Contáctanos</a></li>
+                  <li><a href="politicas.html">Nuestras Políticas</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footerpeque">
+          <div class="footer-section explore">
+              <button class="footerexpand">Explora</button>
+              <ul>
+                  <li><a href="anillo.html">Anillos</a></li>
+                  <li><a href="aretes.html">Aretes</a></li>
+                  <li><a href="pulsera.html">Pulseras</a></li>
+                  <li><a href="reloj.html">Relojes</a></li>
+                  <li><a href="collar.html">Collares</a></li>
+              </ul>
+          </div>
+          <div class="footer-section collections">
+              <button class="footerexpand">Colecciones</button>
+              <ul>
+                  <li><a href="coleccion1.html">Wildlife Whispers</a></li>
+                  <li><a href="coleccion2.html">Enlace Celestial</a></li>
+                  <li><a href="coleccion3.html">Eterna Promesa</a></li>
+              </ul>
+          </div>
+          <div class="footer-section social-media">
+              <button class="footerexpand">Síguenos</button>
+              <ul>
+                  <li><a href="https://www.instagram.com/betmor_official?igsh=MWN3MnFrZWczcHlzNA=="><i class="fab fa-instagram"></i> Instagram</a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=61561210915569"><i class="fab fa-facebook"></i> Facebook</a></li>
+              </ul>
+          </div>
+          <div class="footer-section contact">
+              <button class="footerexpand">Contacto</button>
+              <ul>
+                  <li><a href="contacto.html">Contáctanos</a></li>
+                  <li><a href="politicas.html">Nuestras Políticas</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <a href="index.html">
+              <img src="logog.png" alt="Imagen Logo" class="imagenLG">
+          </a>
+      </div>
+  </footer>
+</html>

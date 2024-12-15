@@ -1,0 +1,308 @@
+<html lang="es">
+    <head>
+        <title>BetMor</title>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="estilosbm.css">
+        <script src = "script.js"> </script>
+        <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+      <header>
+        <a href="index.html" class="homelink">
+            <img src="logog.png" alt="Imagen Logo" class="imagenLG">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+            </ul>
+            <a href="gift.html" class="gift-icon">
+                <i class="fas fa-gift"></i>
+            </a>
+            <div class="menu-icon" onclick="openNav()">&#9776;</div>
+        </nav>
+    </header>     
+    <div class="subnav">
+        <ul>
+            <li><a href="anillo.html">Anillos</a></li>
+            <li><a href="aretes.html">Aretes</a></li>
+            <li><a href="pulsera.html">Pulseras</a></li>
+            <li><a href="reloj.html">Relojes</a></li>
+            <li><a href="collar.html">Collares</a></li>
+        </ul>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Acerca de nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="gift.html" class="gift-icon">
+            <i class="fas fa-gift"></i>
+        </a>
+    </div>
+        <div class="catalog-container">
+          <div class="filters">
+            <h2>Filtrar por:</h2>
+            <h4> Material</h4>
+            <label><input type="checkbox" class="material-filter" value="oro"> Oro</label><br>
+            <label><input type="checkbox" class="material-filter" value="diamante"> Diamante</label><br>
+            <label><input type="checkbox" class="material-filter" value="plata"> Plata</label><br>
+            <label><input type="checkbox" class="material-filter" value="rosa"> Oro Rosa</label><br>
+            
+            <h4> Colección</h4>
+            <label><input type="checkbox" class="collection-filter" value="coleccion1"> Wildlife Whispers</label><br>
+            <label><input type="checkbox" class="collection-filter" value="coleccion2"> Enlace Celestial</label><br>
+            <label><input type="checkbox" class="collection-filter" value="coleccion3"> Eterna Promesa</label><br>
+          </div>
+          <div class="things">
+            <h2>Catálogo de Collares</h2>
+            <!-- Coleccion 1 -->
+            <div class="productos productos-oro coleccion1">
+              <div class="producto" data-id="1c">
+                <img src="images/collar/nature1.PNG">
+                <h5>Collar de Mujer Dirillo</h5>
+                <p>$450.00</p>
+              </div>
+              <div class="producto" data-id="1.2c">
+                <img src="images/collar/nature2.PNG">
+                <h5>Collar de Mujer Bornes</h5>
+                <p>$888.00</p>
+              </div>
+              <div class="producto" data-id="1.3c">
+                <img src="images/collar/nature3.PNG">
+                <h5>Collar de Mujer Gunjur</h5>
+                <p>$1,173.00</p>
+              </div>
+              <div class="producto" data-id="1.4c">
+                <img src="images/collar/nature4.PNG">
+                <h5>Collar de Mujer Dittaino</h5>
+                <p>$357.00</p>
+              </div>
+            </div>
+            <div class="productos productos-rosa coleccion1">
+              <div class="producto" data-id="1.5c">
+                <img src="images/collar/nature5.PNG">
+                <h5>Collar de Mujer Joliend</h5>
+                <p>$512.00</p>
+              </div>
+              <div class="producto" data-id="1.6c">
+                <img src="images/collar/nature6.PNG">
+                <h5>Collar de Mujer Bucegi</h5>
+                <p>$1,021.00</p>
+              </div>
+              <div class="producto" data-id="1.7c">
+                <img src="images/collar/nature7.PNG">
+                <h5>Collar de Mujer Casulo</h5>
+                <p>$906.00</p>
+              </div>
+              <div class="producto" data-id="1.8c">
+                <img src="images/collar/nature8.PNG">
+                <h5>Collar de Mujer Elimin</h5>
+                <p>$540.00</p>
+              </div>
+            </div>
+            <div class="productos productos-plata coleccion1">
+              <div class="producto" data-id="1.9c">
+                <img src="images/collar/nature9.PNG">
+                <h5>Collar de Mujer Tirrena</h5>
+                <p>$869.00</p>
+              </div>
+              <div class="producto" data-id="1.10c">
+                <img src="images/collar/nature10.PNG">
+                <h5>Collar de Mujer Venetico</h5>
+                <p>$903.00</p>
+              </div>
+              <div class="producto" data-id="1.11c">
+                <img src="images/collar/nature11.PNG">
+                <h5>Collar de Mujer Antillo</h5>
+                <p>$567.00</p>
+              </div>
+              <div class="producto" data-id="1.12c">
+                <img src="images/collar/nature12.PNG">
+                <h5>Collar de Mujer Caronia</h5>
+                <p>$524.00</p>
+              </div>
+            </div>
+            <!-- Coleccion 2 -->
+            <div class="productos productos-oro coleccion2">
+              <div class="producto" data-id="2c">
+                <img src="images/collar/enlace1.PNG">
+                <h5>Collar de Mujer Prietenie</h5>
+                <p>$519.00</p>
+              </div>
+              <div class="producto" data-id="2.2c">
+                <img src="images/collar/enlace2.PNG">
+                <h5>Collar de Mujer Mengubah</h5>
+                <p>$373.00</p>
+              </div>
+              <div class="producto" data-id="2.3c">
+                <img src="images/collar/enlace3.PNG">
+                <h5>Collar de Mujer Pettiness</h5>
+                <p>$767.00</p>
+              </div>
+              <div class="producto" data-id="2.4c">
+                <img src="images/collar/enlace4.PNG">
+                <h5>Collar de Mujer Csodo</h5>
+                <p>$976.00</p>
+              </div>
+              <div class="producto" data-id="2.5c">
+                <img src="images/collar/enlace5.PNG">
+                <h5>Collar de Mujer Verenag</h5>
+                <p>$762.00</p>
+              </div>
+              <div class="producto" data-id="2.6c">
+                <img src="images/collar/enlace6.PNG">
+                <h5>Collar de Mujer Olesya</h5>
+                <p>$1,073.00</p>
+              </div>
+              <div class="producto" data-id="2.7c">
+                <img src="images/collar/enlace7.PNG">
+                <h5>Collar de Mujer Meangadh</h5>
+                <p>$731.00</p>
+              </div>
+              <div class="producto" data-id="2.8c">
+                <img src="images/collar/enlace8.PNG">
+                <h5>Collar de Mujer Smysl</h5>
+                <p>$393.00</p>
+              </div>
+            </div>
+             <!-- Coleccion 3 -->
+             <div class="productos productos-oro coleccion3">
+              <div class="producto" data-id="3c">
+                <img src="images/collar/eterna1.PNG">
+                <h5>Collar de Mujer Umbrete</h5>
+                <p>$556.00</p>
+              </div>
+              <div class="producto" data-id="3.2c">
+                <img src="images/collar/eterna2.PNG">
+                <h5>Collar de Mujer Tomares</h5>
+                <p>$988.00</p>
+              </div>
+              <div class="producto" data-id="3.3c">
+                <img src="images/collar/eterna3.PNG">
+                <h5>Collar de Mujer Moncoeur</h5>
+                <p>$914.00</p>
+              </div>
+              <div class="producto" data-id="3.4c">
+                <img src="images/collar/eterna4.PNG">
+                <h5>Collar de Mujer Loirevalley</h5>
+                <p>$568.00</p>
+              </div>
+              <div class="producto" data-id="3.5c">
+                <img src="images/collar/eterna5.PNG">
+                <h5>Collar de Mujer Metz</h5>
+                <p>$678.00</p>
+              </div>
+              <div class="producto" data-id="3.6c">
+                <img src="images/collar/eterna6.PNG">
+                <h5>Collar de Mujer Eiffel</h5>
+                <p>$563.00</p>
+              </div>
+              <div class="producto" data-id="3.7c">
+                <img src="images/collar/eterna7.PNG">
+                <h5>Collar de Mujer Chaumont</h5>
+                <p>$669.00</p>
+              </div>
+              <div class="producto" data-id="3.8c">
+                <img src="images/collar/eterna8.PNG">
+                <h5>Collar de Mujer Beaunez</h5>
+                <p>$698.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="js/swiper-bundle.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com /ajax/libs/gsap/3.12.2/gsap.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com /ajax/libs/gsap/3.12.2/ScrollTrigger.min .js"></script>
+        <script src="https://cdn.jsdelivr.net/gh /studio-freight/lenis@1.0.27/bundled/lenis .min.js"></script>
+        <script>
+            const lenis= new Lenis()
+            lenis.on('scroll', ScrollTrigger.update)
+            gsap.ticker.add((time) => {
+            lenis.raf(time * 1000)
+            })
+            gsap.ticker.lagSmoothing (0)
+        </script>
+    </body>
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section explore">
+              <h3>Explora</h3>
+              <ul>
+                  <li><a href="anillo.html">Anillos</a></li>
+                  <li><a href="aretes.html">Aretes</a></li>
+                  <li><a href="pulsera.html">Pulseras</a></li>
+                  <li><a href="reloj.html">Relojes</a></li>
+                  <li><a href="collar.html">Collares</a></li>
+              </ul>
+          </div>
+          <div class="footer-section collections">
+              <h3>Colecciones</h3>
+              <ul>
+                  <li><a href="coleccion1.html">Wildlife Whispers</a></li>
+                  <li><a href="coleccion2.html">Enlace Celestial</a></li>
+                  <li><a href="coleccion3.html">Eterna Promesa</a></li>
+              </ul>
+          </div>
+          <div class="footer-section social-media">
+              <h3>Síguenos</h3>
+              <ul>
+                  <li><a href="https://www.instagram.com/betmor_official?igsh=MWN3MnFrZWczcHlzNA=="><i class="fab fa-instagram"></i> Instagram</a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=61561210915569"><i class="fab fa-facebook"></i> Facebook</a></li>
+              </ul>
+          </div>
+          <div class="footer-section contact">
+              <h3>Contacto</h3>
+              <ul>
+                  <li><a href="contacto.html">Contáctanos</a></li>
+                  <li><a href="politicas.html">Nuestras Políticas</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footerpeque">
+          <div class="footer-section explore">
+              <button class="footerexpand">Explora</button>
+              <ul>
+                  <li><a href="anillo.html">Anillos</a></li>
+                  <li><a href="aretes.html">Aretes</a></li>
+                  <li><a href="pulsera.html">Pulseras</a></li>
+                  <li><a href="reloj.html">Relojes</a></li>
+                  <li><a href="collar.html">Collares</a></li>
+              </ul>
+          </div>
+          <div class="footer-section collections">
+              <button class="footerexpand">Colecciones</button>
+              <ul>
+                  <li><a href="coleccion1.html">Wildlife Whispers</a></li>
+                  <li><a href="coleccion2.html">Enlace Celestial</a></li>
+                  <li><a href="coleccion3.html">Eterna Promesa</a></li>
+              </ul>
+          </div>
+          <div class="footer-section social-media">
+              <button class="footerexpand">Síguenos</button>
+              <ul>
+                  <li><a href="https://www.instagram.com/betmor_official?igsh=MWN3MnFrZWczcHlzNA=="><i class="fab fa-instagram"></i> Instagram</a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=61561210915569"><i class="fab fa-facebook"></i> Facebook</a></li>
+              </ul>
+          </div>
+          <div class="footer-section contact">
+              <button class="footerexpand">Contacto</button>
+              <ul>
+                  <li><a href="contacto.html">Contáctanos</a></li>
+                  <li><a href="politicas.html">Nuestras Políticas</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <a href="index.html">
+              <img src="logog.png" alt="Imagen Logo" class="imagenLG">
+          </a>
+      </div>
+  </footer>
+</html>
